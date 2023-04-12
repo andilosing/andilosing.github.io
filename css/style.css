@@ -21,6 +21,7 @@
  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
  --card-backround:  rgba(255,255,255,.3);
+ --menu-mobile-shadow: rgba(0, 0, 0, .15)
 
 
  
@@ -80,6 +81,7 @@ body.dark-theme{
  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
  --card-backround:  rgba(0,0,0,.6);
+ --menu-mobile-shadow: rgba(255, 255, 255, .05)
 }
 /*=========================== BUTTON DARK/LIGHT ===========================*/
 .nav_btns{
@@ -213,7 +215,7 @@ header{
     width: 100%;
     background-color: var(--body-color);
     padding: 2rem 1.5rem 4rem;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+    box-shadow: 0 -1px 4px var(--menu-mobile-shadow);
     border-radius: 1.5rem;
     transition: .5s;
   }
