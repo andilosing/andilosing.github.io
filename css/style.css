@@ -21,7 +21,7 @@
  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
  --card-backround:  rgba(255,255,255,.3);
- --menu-mobile-shadow: rgba(0, 0, 0, .15)
+ --menu-mobile-shadow: rgba(0, 0, 0, .15);
 
 
  
