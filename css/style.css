@@ -308,7 +308,7 @@ align-items: center;
   font-size: var(--big-font-size);
   position: relative;
   color: var(--body-color);
-  -webkit-text-stroke: 0.05vw #7c51c2;
+  -webkit-text-stroke: 1px #7c51c2;
 }
 
 .home_title-text_effect::before{
