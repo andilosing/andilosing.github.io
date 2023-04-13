@@ -107,6 +107,13 @@ body.dark-theme{
   margin: 0;
 }
 
+html,
+body{
+  overflow-x: hidden;
+}
+
+
+
 html{
   scroll-behavior: smooth;
 }
@@ -118,7 +125,7 @@ body{
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  overflow-x: hidden!important;
+  position: relative;
 }
 
 h1,h2,h3,h4{
