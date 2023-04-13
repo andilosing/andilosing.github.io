@@ -168,6 +168,8 @@ img{
   text-align: center;
 }
 
+
+
 /*=========================== LAYOUT ===========================*/
 .container{
   max-width: 768px;
@@ -223,11 +225,14 @@ header{
     bottom: -100%;
     left: 0;
     width: 100%;
-    background-color: var(--body-color);
     padding: 2rem 1.5rem 4rem;
-    box-shadow: 0 -1px 4px var(--menu-mobile-shadow);
-    border-radius: 1.5rem;
     transition: .5s;
+    background: linear-gradient(135deg, rgba(255,255,255,.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+     border-radius: 20px;
+     border: 1px solid rgba(255,255,255..18);
+     box-shadow: 0 -8px 8px  var(--menu-mobile-shadow);
   }
 }
 
@@ -788,6 +793,13 @@ align-items: center;
   }
 }
 
+@media screen and (min-width: 730px){
+.skills_slider::before,
+.skills_slider::after{ 
+  width: 40%;
+}
+}
+
 @media screen and (min-width: 768px){
   .container{
     margin-left: auto;
@@ -921,5 +933,7 @@ align-items: center;
   .skills_slider-track:hover{
     animation-play-state: paused;
   }
+
+ 
   
 }
