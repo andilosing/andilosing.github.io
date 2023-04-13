@@ -82,7 +82,7 @@ body.dark-theme{
  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
  --card-backround:  rgba(0,0,0,.6);
- --menu-mobile-shadow: rgba(255, 255, 255, .05);
+ --menu-mobile-shadow: rgba(255, 255, 255, .15);
  --skills-slider-blur: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
 }
 /*=========================== BUTTON DARK/LIGHT ===========================*/
@@ -793,12 +793,7 @@ align-items: center;
   }
 }
 
-@media screen and (min-width: 730px){
-.skills_slider::before,
-.skills_slider::after{ 
-  width: 40%;
-}
-}
+
 
 @media screen and (min-width: 768px){
   .container{
@@ -821,6 +816,11 @@ align-items: center;
   .header{
     top: 0;
     bottom: initial;
+    background: linear-gradient(135deg, rgba(255,255,255,.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+     border: 1px solid rgba(255,255,255..18);
+     box-shadow: 0 -8px 8px  var(--menu-mobile-shadow);
   }
 
   .header,
