@@ -75,7 +75,7 @@
 body.dark-theme{
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --title-color: hsl(var(--hue-color), 8%, 95%);
-  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --text-color: rgba(92, 186, 201, 0.8);
   --input-color: hsl(var(--hue-color), 28%, 12%);
   --body-color: hsl(var(--hue-color), 0%, 0%);
  --container-color:hsl(var(--hue-color), 29%, 16%);
@@ -228,7 +228,7 @@ header{
     left: 0;
     width: 100%;
     padding: 2rem 1.5rem 4rem;
-    transition: .3s;
+    transition: .5s;
     background: linear-gradient(135deg, rgba(255,255,255,.1), rgba(255,255,255,0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -279,8 +279,7 @@ header{
 }
 
 .header-bg{
-  transition: .5s;
-  background: var(--body-color);
+  background: rgba(255,255,255,0);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
