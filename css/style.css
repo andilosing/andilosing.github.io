@@ -188,7 +188,9 @@ header{
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  background: linear-gradient(135deg, rgba(255,255,255,.1), rgba(255,255,255,0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /*=========================== NAV ===========================*/
@@ -222,11 +224,11 @@ header{
 @media screen and (max-width: 767px) {
   .nav_menu{
     position: fixed;
-    bottom: -100%;
+    bottom: -500%;
     left: 0;
     width: 100%;
     padding: 2rem 1.5rem 4rem;
-    transition: .5s;
+    transition: .3s;
     background: linear-gradient(135deg, rgba(255,255,255,.1), rgba(255,255,255,0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -274,6 +276,13 @@ header{
 /* show menu */
 .show-menu{
   bottom: 0;
+}
+
+.header-bg{
+  transition: .5s;
+  background: var(--body-color);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 /* active link */

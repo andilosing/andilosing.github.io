@@ -1,13 +1,15 @@
 /*=========================== MENU SHOW Y HIDDEN ===========================*/
 const navMenu = document.getElementById("nav-menu"),
-      navToggle = document.getElementById("nav-toggle")
-      navClose = document.getElementById("nav-close")
+      navToggle = document.getElementById("nav-toggle"),
+      navClose = document.getElementById("nav-close"),
+      header = document.getElementById("header")
 
 /*==== MENU SHOW ====*/
 /*validate if const exists */
 if(navToggle){
   navToggle.addEventListener("click", () => {
     navMenu.classList.add("show-menu")
+    header.classList.add("header-bg")
   })
 }
 
@@ -16,6 +18,7 @@ if(navToggle){
 if(navClose){
   navClose.addEventListener("click", () => {
     navMenu.classList.remove("show-menu")
+    header.classList.remove("header-bg")
   })
 }
 
