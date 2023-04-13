@@ -118,7 +118,6 @@ body{
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  overflow-x: hidden;
 }
 
 h1,h2,h3,h4{
@@ -487,8 +486,8 @@ align-items: center;
 
 .project_card-box{
   position: relative;
-  width: 300px;
-  height: 375px;
+  width: 320px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -618,76 +617,14 @@ align-items: center;
   height: 250px;
   margin: auto;
   position: relative;
-  width: 100%;
+  width: 90%;
   display: grid;
   place-items: center;
   }
 
 .skills_slider-track{
   display: flex;
-  width: calc(250px * 22);
-  animation: scroll 30s linear infinite;
-}
-
-.skills_slider-track:hover{
-  animation-play-state: paused;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 11));
-  }
-}
-
-.skills_slide{
-  height: 250px;
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  perspective: 100px;
-}
-
-.skills_slide-title{
-  margin-bottom: 20px;
-}
-
-.slide_img{
-  width: 100%;
-  transition: transform 1s;
-}
-
-.slide_img:hover{
-  transform: translateZ(20px);
-}
-
-/* gradient shadow */
-
-.skills_slider::before,
-.skills_slider::after{
-  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-  content: '';
-  height: 120%;
-  position: absolute;
-  width: 25%;
-  z-index: 2;
-  padding: 0;
-  margin: 0;
-}
-
-.skills_slider::before{
-  left: 0;
-  top: 0;
-}
-
-.skills_slider::after{
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
+  width: calc(250px * 20);
 }
 
 /*=========================== SCROLL UP ===========================*/
