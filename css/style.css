@@ -398,6 +398,10 @@ align-items: center;
   font-size: 1.25rem;
 }
 
+
+
+
+
 /*===== BUTTONS =====*/
 
 .button{
@@ -473,7 +477,7 @@ align-items: center;
   display: inline-block;
   width: 13px;
   height: 13px;
-  background-color: var(--first-color);
+  background-color: var(--first-color-alt);
   border-radius: 50%;
 }
 
@@ -858,6 +862,8 @@ align-items: center;
     grid-template-columns: .25fr 3fr;
   }
 
+
+
   
   
 
@@ -888,6 +894,14 @@ align-items: center;
 
   .footer_container{
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills_slider::before{
+    left: -5%;
+  }
+  
+  .skills_slider::after{
+    right: -5%;
   }
 
   
@@ -1037,10 +1051,3 @@ align-items: center;
   
 }
 
-@media screen and (min-width: 1450px) {
-  
-  .project_card-box:hover{
-    transform: translateY(-20px);
-  } 
-  
-}
