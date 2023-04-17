@@ -9,20 +9,25 @@
   --hue-color: 188.257;
 
   --first-color: hsl(var(--hue-color), 50%, 57%, .8);
-  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+ 
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-  --title-color: hsl(var(--hue-color), 10%, 10%);
-  --text-color: hsl(var(--hue-color), 0%, 45%);
+  
+ 
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
-  --input-color: hsl(var(--hue-color), 70%, 96%);
-  --body-color: hsl(var(--hue-color), 6%, 99%);
-  --container-color:#fff;
-  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-  --card-backround:  rgba(255,255,255,.3);
-  --menu-mobile-shadow: rgba(0, 0, 0, .15);
- --skills-slider-blur: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  
+  
+ --first-color-second: hsl(var(--hue-color), 30%, 8%);
+ --title-color: hsl(var(--hue-color), 8%, 96%);
+ --text-color: hsl(var(--hue-color), 8%, 75%);
+ --input-color: hsl(var(--hue-color), 28%, 12%);
+ --body-color: hsl(var(--hue-color), 0%, 5%);
+--container-color:hsl(var(--hue-color), 29%, 16%);
+--scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+--scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+--card-backround:  rgba(0,0,0,.6);
+--menu-mobile-shadow: rgba(255, 255, 255, .15);
+--skills-slider-blur: linear-gradient(to right, rgb(13, 13, 13) 0%, rgba(13, 13, 13, 0) 100%);
 
 
  
@@ -73,17 +78,18 @@
 }
 /*=========================== VARIABLES DARK ===========================*/
 body.dark-theme{
-  --first-color-second: hsl(var(--hue-color), 30%, 8%);
-  --title-color: hsl(var(--hue-color), 8%, 96%);
-  --text-color: hsl(var(--hue-color), 8%, 75%);
-  --input-color: hsl(var(--hue-color), 28%, 12%);
-  --body-color: hsl(var(--hue-color), 0%, 5%);
- --container-color:hsl(var(--hue-color), 29%, 16%);
- --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
- --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
- --card-backround:  rgba(0,0,0,.6);
- --menu-mobile-shadow: rgba(255, 255, 255, .15);
- --skills-slider-blur: linear-gradient(to right, rgb(13, 13, 13) 0%, rgba(13, 13, 13, 0) 100%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --title-color: hsl(var(--hue-color), 10%, 10%);
+  --text-color: hsl(var(--hue-color), 0%, 45%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 6%, 99%);
+  --container-color:#fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --card-backround:  rgba(255,255,255,.3);
+  --menu-mobile-shadow: rgba(0, 0, 0, .15);
+ --skills-slider-blur: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+
 }
 /*=========================== BUTTON DARK/LIGHT ===========================*/
 .nav_btns{
