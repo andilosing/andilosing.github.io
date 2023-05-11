@@ -737,12 +737,15 @@ align-items: center;
   width: 100%;
   display: grid;
   place-items: center;
+  overflow: hidden;
+  
   }
 
 .skills_slider-track{
   display: flex;
   width: calc(250px * 22);
   animation: scroll 30s linear infinite;
+  overflow: hidden;
 }
 
 
@@ -764,6 +767,7 @@ align-items: center;
   align-items: center;
   padding: 30px;
   perspective: 100px;
+  overflow: hidden;
 }
 
 .skills_slide-title{
@@ -902,14 +906,7 @@ align-items: center;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .skills_slider::before{
-    left: -5%;
-  }
-  
-  .skills_slider::after{
-    right: -5%;
-  }
-
+ 
   
 }
 
