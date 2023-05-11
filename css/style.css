@@ -879,6 +879,12 @@ align-items: center;
 
 }
 
+@media screen and (max-width: 4000px) {
+.project_card-box .content p{
+  font-size: 10px;
+}
+}
+
 
 
 /* medium device  */
@@ -906,7 +912,7 @@ align-items: center;
     grid-template-columns: repeat(2, 1fr);
   }
 
- 
+
   
 }
 
