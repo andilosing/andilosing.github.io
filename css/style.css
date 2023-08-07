@@ -22,6 +22,7 @@
  --text-color: hsl(var(--hue-color), 8%, 75%);
  --input-color: hsl(var(--hue-color), 28%, 12%);
  --body-color: hsl(var(--hue-color), 0%, 5%);
+ --card-color: hsl(var(--hue-color), 0%, 10%);
 --container-color:hsl(var(--hue-color), 29%, 16%);
 --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
 --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
@@ -83,6 +84,7 @@ body.dark-theme{
   --text-color: hsl(var(--hue-color), 0%, 45%);
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: hsl(var(--hue-color), 6%, 99%);
+  --card-color: hsl(var(--hue-color), 0%, 95%);
   --container-color:#fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -730,8 +732,10 @@ align-items: center;
 }
 
 /*=========================== SKILLS ===========================*/
+
+
 .skills_slider{
-  height: 250px;
+  height: 300px;
   margin: auto;
   position: relative;
   width: 100%;
@@ -775,7 +779,7 @@ align-items: center;
 }
 
 .slide_img{
-  width: 100%;
+  width: 80%;
   transition: transform 1s;
 }
 
@@ -806,6 +810,115 @@ align-items: center;
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
+}
+
+
+
+/*=========================== SERVICES ===========================*/
+
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;  
+}
+
+.card{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: var(--card-color);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 30px;
+  transition: 1s;
+  text-align: center;
+}
+/*
+-first-color: hsl(var(--hue-color), 50%, 57%, .8);
+ 
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  
+ 
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  
+  
+ --first-color-second: hsl(var(--hue-color), 30%, 8%);
+ --title-color: hsl(var(--hue-color), 8%, 96%);
+ --text-color: hsl(var(--hue-color), 8%, 75%);
+ --input-color: hsl(var(--hue-color), 28%, 12%);
+ --body-color: hsl(var(--hue-color), 0%, 5%);
+--container-color:hsl(var(--hue-color), 29%, 16%);
+--scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+--scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+--card-backround:  rgba(0,0,0,.6);
+--menu-mobile-shadow: rgba(255, 255, 255, .15);
+--skills-slider-blur: linear-gradient(to right, rgb(13, 13, 13) 0%, rgba(13, 13, 13, 0) 100%);
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.card{
+  height: 365px;
+  width: 335px;
+  padding: 20px 35px;
+  background: grey;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+*/
+
+.card i{
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 5px 0;
+  color:var(--first-color);
+}
+
+h5{
+  color: var(--text-color);
+  font-size: 23px;
+  margin-bottom: 15px;
+
+}
+
+
+.pra p{
+  color: var(--title-color);
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+  margin-left: 8px;
+  margin-right: 6px;
+}
+
+.card .button{
+  background-color: var(--first-color);
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 12px;
+  border-radius: 30px;
+  margin-right: 7px;
+  transition: .4s;
+}
+
+.card .button:hover{
+  background-color: transparent;
+  border: 2px solid var(--first-color);
+  cursor: pointer;
 }
 
 /*=========================== SCROLL UP ===========================*/
