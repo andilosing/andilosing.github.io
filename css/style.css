@@ -232,7 +232,7 @@ header{
 @media screen and (max-width: 767px) {
   .nav_menu{
     position: fixed;
-    bottom: -500%;
+    bottom: -700%;
     left: 0;
     width: 100%;
     padding: 2rem 1.5rem 4rem;
@@ -839,47 +839,7 @@ align-items: center;
   
   
 }
-/*
--first-color: hsl(var(--hue-color), 50%, 57%, .8);
- 
-  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-  
- 
-  --text-color-light: hsl(var(--hue-color), 8%, 65%);
-  
-  
- --first-color-second: hsl(var(--hue-color), 30%, 8%);
- --title-color: hsl(var(--hue-color), 8%, 96%);
- --text-color: hsl(var(--hue-color), 8%, 75%);
- --input-color: hsl(var(--hue-color), 28%, 12%);
- --body-color: hsl(var(--hue-color), 0%, 5%);
---container-color:hsl(var(--hue-color), 29%, 16%);
---scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
---scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
---card-backround:  rgba(0,0,0,.6);
---menu-mobile-shadow: rgba(255, 255, 255, .15);
---skills-slider-blur: linear-gradient(to right, rgb(13, 13, 13) 0%, rgba(13, 13, 13, 0) 100%);
 
-.box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 400px;
-}
-
-.card{
-  height: 365px;
-  width: 335px;
-  padding: 20px 35px;
-  background: grey;
-  border-radius: 20px;
-  margin: 15px;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-}
-*/
 
 .card i{
   font-size: 50px;
@@ -893,6 +853,8 @@ h5{
   color: var(--text-color);
   font-size: 23px;
   margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
 
 }
 
@@ -903,7 +865,7 @@ h5{
   line-height: 27px;
   margin-bottom: 25px;
   margin-left: 8px;
-  margin-right: 6px;
+  margin-right: 8px;
 }
 
 .card .button{
