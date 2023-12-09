@@ -108,4 +108,23 @@ if(toggle){
   })
 }
 
+/*==================== IPHONE ====================*/ 
+
+    var video = document.getElementById("myVideo");
+    var playButton = document.getElementById("playButton");
+    var playIcon = document.getElementById("playIcon");
+
+    playButton.addEventListener("click", function() {
+        if (video.paused) {
+            video.play();
+            playIcon.className = "uil uil-pause";
+        } else {
+            video.pause();
+            playIcon.className = "uil uil-play";
+        }
+    });
+
+    video.addEventListener("ended", function() {
+        playIcon.className = "uil uil-play";
+    });
 

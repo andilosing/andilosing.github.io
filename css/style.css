@@ -445,6 +445,8 @@ align-items: center;
 .iphone_mockup.container{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .iphone-mockup {
@@ -482,6 +484,40 @@ align-items: center;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em; /* Größe des Icons */
+  color: white;
+  background-color: rgba(255, 255, 255, 0.144); /* Halbtransparenter Hintergrund */
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+/* Stil für das Font Awesome Icon im Button */
+.play-button i {
+  color: white; /* Farbe des Icons */
+}
+
+/* Verbergen des Buttons beim Abspielen */
+.play-button.hide {
+  display: none;
+}
+
+/* Optional: Animation beim Hover über den Button */
+.play-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /*=========================== QUALIFICATION ===========================*/
@@ -794,7 +830,7 @@ align-items: center;
 
 .skills_slider-track{
   display: flex;
-  width: calc(250px * 22);
+  width: calc(250px * 36);
   animation: scroll 30s linear infinite;
   overflow: hidden;
 }
@@ -806,7 +842,7 @@ align-items: center;
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 11));
+    transform: translateX(calc(-250px * 18));
   }
 }
 

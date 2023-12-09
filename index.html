@@ -116,10 +116,13 @@
 
 <!--=========================== IPHOE MOCKUP ===========================-->
 <section class="iphone_mockup section container" id="iphone">
+  <h2 class="section_title">Mein aktuelles Projekt</h2>
+  <span class="section_subtitle">Karteikartenapp mit Multi-User Funktionalität</span>
     <div class="iphone-mockup">
       <div class="iphone-screen">
           <!-- Embed your video here -->
-          <video src="video/Iphone_Video_Mock.mov" controls></video>
+          <video id="myVideo" src="video/Iphone_Video_Mock.mov"></video>
+          <button class="play-button" id="playButton"><i id="playIcon" class="uil uil-play"></i></button>
       </div>
   </div>
   </section>
@@ -350,95 +353,188 @@
             <span class="section_subtitle">I have mastered the following tools</span>
             <div class="skills_slider">
               <div class="skills_slider-track">
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">JavaScript</h3>
-                  <img src="img/JavaScript.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">HTML</h3>
-                  <img src="img/HTML.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">CSS</h3>
-                  <img src="img/CSS.png" alt="" class="slide_img">
-                </div>
+
                 <div class="skills_slide">
                   <h3 class="skills_slide-title">Java</h3>
                   <img src="img/Java.png" alt="" class="slide_img">
                 </div>
+
                 <div class="skills_slide">
-                  <h3 class="skills_slide-title">SQL</h3>
-                  <img src="img/SQL.png" alt="" class="slide_img"> 
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Database</h3>
-                  <img src="img/Database.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Github</h3>
-                  <img src="img/Github.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">SAP</h3>
-                  <img src="img/SAP.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Excel</h3>
-                  <img src="img/Excel.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Powerpoint</h3>
-                  <img src="img/Powerpoint.png" alt="" class="slide_img">
-                </div>
-                <div class="skills_slide">
-                  <h3 class="skills_slide-title">Word</h3>
-                  <img src="img/Word.png" alt="" class="slide_img">
+                  <h3 class="skills_slide-title">HTML</h3>
+                  <img src="img/HTML.png" alt="" class="slide_img">
                 </div>
 
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">CSS</h3>
+                  <img src="img/CSS.png" alt="" class="slide_img">
+                </div>
 
                 <div class="skills_slide">
                   <h3 class="skills_slide-title">JavaScript</h3>
                   <img src="img/JavaScript.png" alt="" class="slide_img">
                 </div>
+
                 <div class="skills_slide">
-                  <h3 class="skills_slide-title">HTML</h3>
-                  <img src="img/HTML.png" alt="" class="slide_img">
+                  <h3 class="skills_slide-title">TypeScript</h3>
+                  <img src="img/TypeScript.png" alt="" class="slide_img">
                 </div>
+
                 <div class="skills_slide">
-                  <h3 class="skills_slide-title">CSS</h3>
-                  <img src="img/CSS.png" alt="" class="slide_img">
+                  <h3 class="skills_slide-title">PHP</h3>
+                  <img src="img/PHP.png" alt="" class="slide_img">
                 </div>
+
                 <div class="skills_slide">
-                  <h3 class="skills_slide-title">Java</h3>
-                  <img src="img/Java.png" alt="" class="slide_img">
+                  <h3 class="skills_slide-title">NodeJS</h3>
+                  <img src="img/NodeJS.png" alt="" class="slide_img">
                 </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">React</h3>
+                  <img src="img/React.png" alt="" class="slide_img">
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Tailwind CSS</h3>
+                  <img src="img/TailwindCSS.png" alt="" class="slide_img">
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Lit</h3>
+                  <img src="img/Lit.png" alt="" class="slide_img">
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">npm</h3>
+                  <img src="img/npm.png" alt="" class="slide_img">
+                </div>
+
                 <div class="skills_slide">
                   <h3 class="skills_slide-title">SQL</h3>
                   <img src="img/SQL.png" alt="" class="slide_img"> 
                 </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">MySQL</h3>
+                  <img src="img/MySQL.png" alt="" class="slide_img"> 
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Postgres</h3>
+                  <img src="img/Postgres.png" alt="" class="slide_img"> 
+                </div>
+
                 <div class="skills_slide">
                   <h3 class="skills_slide-title">Database</h3>
                   <img src="img/Database.png" alt="" class="slide_img">
                 </div>
+            
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">REST-API</h3>
+                  <img src="img/API.png" alt="" class="slide_img">
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">GraphQL</h3>
+                  <img src="img/API.png" alt="" class="slide_img">
+                </div>
+
                 <div class="skills_slide">
                   <h3 class="skills_slide-title">Github</h3>
                   <img src="img/Github.png" alt="" class="slide_img">
                 </div>
+
+
+
+            
                 <div class="skills_slide">
-                  <h3 class="skills_slide-title">SAP</h3>
-                  <img src="img/SAP.png" alt="" class="slide_img">
+                  <h3 class="skills_slide-title">Java</h3>
+                  <img src="img/Java.png" alt="" class="slide_img">
                 </div>
+
                 <div class="skills_slide">
-                  <h3 class="skills_slide-title">Excel</h3>
-                  <img src="img/Excel.png" alt="" class="slide_img">
+                  <h3 class="skills_slide-title">HTML</h3>
+                  <img src="img/HTML.png" alt="" class="slide_img">
                 </div>
+
                 <div class="skills_slide">
-                  <h3 class="skills_slide-title">Powerpoint</h3>
-                  <img src="img/Powerpoint.png" alt="" class="slide_img">
+                  <h3 class="skills_slide-title">CSS</h3>
+                  <img src="img/CSS.png" alt="" class="slide_img">
                 </div>
+
                 <div class="skills_slide">
-                  <h3 class="skills_slide-title">Word</h3>
-                  <img src="img/Word.png" alt="" class="slide_img">
+                  <h3 class="skills_slide-title">JavaScript</h3>
+                  <img src="img/JavaScript.png" alt="" class="slide_img">
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">TypeScript</h3>
+                  <img src="img/TypeScript.png" alt="" class="slide_img">
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">PHP</h3>
+                  <img src="img/PHP.png" alt="" class="slide_img">
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">NodeJS</h3>
+                  <img src="img/NodeJS.png" alt="" class="slide_img">
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">React</h3>
+                  <img src="img/React.png" alt="" class="slide_img">
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Tailwind CSS</h3>
+                  <img src="img/TailwindCSS.png" alt="" class="slide_img">
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Lit</h3>
+                  <img src="img/Lit.png" alt="" class="slide_img">
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">npm</h3>
+                  <img src="img/npm.png" alt="" class="slide_img">
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">SQL</h3>
+                  <img src="img/SQL.png" alt="" class="slide_img"> 
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">MySQL</h3>
+                  <img src="img/MySQL.png" alt="" class="slide_img"> 
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Postgres</h3>
+                  <img src="img/Postgres.png" alt="" class="slide_img"> 
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Database</h3>
+                  <img src="img/Database.png" alt="" class="slide_img">
+                </div>
+            
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">REST-API</h3>
+                  <img src="img/API.png" alt="" class="slide_img">
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">GraphQL</h3>
+                  <img src="img/API.png" alt="" class="slide_img">
+                </div>
+
+                <div class="skills_slide">
+                  <h3 class="skills_slide-title">Github</h3>
+                  <img src="img/Github.png" alt="" class="slide_img">
                 </div>
               </div>
             </div>
