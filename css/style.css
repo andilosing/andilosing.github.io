@@ -29,6 +29,7 @@
 --card-backround:  rgba(0,0,0,.6);
 --menu-mobile-shadow: rgba(255, 255, 255, .15);
 --skills-slider-blur: linear-gradient(to right, rgb(13, 13, 13) 0%, rgba(13, 13, 13, 0) 100%);
+--iphone-shadow: 0 0 10px rgba(95, 95, 95, 0.5);
 
 
  
@@ -91,6 +92,7 @@ body.dark-theme{
   --card-backround:  rgba(255,255,255,.3);
   --menu-mobile-shadow: rgba(0, 0, 0, .15);
  --skills-slider-blur: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+ --iphone-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 }
 /*=========================== BUTTON DARK/LIGHT ===========================*/
@@ -435,6 +437,51 @@ align-items: center;
 .button--flex{
   display: inline-flex;
   align-items: center;
+}
+
+
+/*=========================== IPHONE MOCKUP ===========================*/
+
+.iphone_mockup.container{
+  display: flex;
+  justify-content: center;
+}
+
+.iphone-mockup {
+  width: 240px;
+  height: 480px;
+  border-radius: 30px;
+  box-shadow: var(--iphone-shadow);
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 20px;
+}
+
+.iphone-mockup::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 60px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #333;
+}
+
+.iphone-screen {
+  width: 220px;
+  height: 400px;
+  background-color: black;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.iphone-screen video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*=========================== QUALIFICATION ===========================*/
@@ -1073,6 +1120,9 @@ h5{
   .home_scroll-button{
     margin-left: 3.5rem;
   }
+
+
+  
 
   .qualification_tabs{
     justify-content: center;
