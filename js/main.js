@@ -110,7 +110,7 @@ if(toggle){
 
 /*==================== IPHONE ====================*/ 
 
-  document.getElementById('myVideo').controls = false;
+ 
 
 
     var video = document.getElementById("myVideo");
