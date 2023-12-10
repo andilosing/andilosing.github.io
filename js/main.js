@@ -110,6 +110,9 @@ if(toggle){
 
 /*==================== IPHONE ====================*/ 
 
+  document.getElementById('myVideo').controls = false;
+
+
     var video = document.getElementById("myVideo");
     var playButton = document.getElementById("playButton");
     var playIcon = document.getElementById("playIcon");
