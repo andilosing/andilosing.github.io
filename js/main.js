@@ -131,3 +131,4 @@ if(toggle){
         playIcon.className = "uil uil-play";
     });
 
+  
