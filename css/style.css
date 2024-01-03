@@ -170,7 +170,7 @@ img{
 .section_subtitle{
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-3);
+  margin-bottom: 20px;
 }
 
 .section_title,
@@ -439,6 +439,49 @@ align-items: center;
   align-items: center;
 }
 
+/*=========================== TECHNOLOGY STACK ===========================*/
+
+.technology-stack {
+  text-align: left;
+  background: transparent; /* Dunkelgrauer Hintergrund für den Technologie-Stack */
+  color: var(--text-color); /* Helle Schriftfarbe für guten Kontrast */
+  padding: 1rem;
+  border-radius: 8px; /* Leichte Abrundung der Ecken */
+  margin: 1rem 0; /* Abstand oben und unten */
+  box-shadow: var(--iphone-shadow); /* Subtiler Schatten für Tiefe */
+  width: 90%;
+  max-width: 500px;
+}
+
+.stack-title {
+  font-size: 1.2rem; /* Größere Schrift für den Titel */
+  margin-bottom: 0.5rem; /* Abstand unter dem Titel */
+  color: var(--first-color); /* Farbakzent für den Titel */
+}
+
+.stack-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1rem; /* Standard Schriftgröße für die Liste */
+}
+
+
+.stack-list li:not(:last-child) {
+  margin-bottom: 0.25rem; /* Abstand zwischen den Listenelementen, außer dem letzten */
+}
+
+.stack-list li::before {
+  content: '• '; /* Fügt einen Bullet Point vor jedem Listenelement hinzu */
+  color: var(--first-color); /* Farbe des Bullet Points */
+  font-size: 1.5rem; /* Größe des Bullet Points */
+  vertical-align: middle;
+  margin-right: 0.5rem; /* Abstand zwischen Bullet Point und Text */
+}
+
+.stack-list li span {
+  font-weight: bold; /* Macht die Kategorie (z.B. Frontend) fett */
+}
+
 /*=========================== COMPUTER MOCKUP ===========================*/
 .computer_mockup.container {
   display: flex;
@@ -458,6 +501,10 @@ align-items: center;
   align-items: top;
   position: relative;
   margin: 20px;
+  box-shadow: var(--iphone-shadow);
+  position: relative; 
+  z-index: 2;
+  margin-bottom: 60px;
 }
 
 .computer-screen {
@@ -467,6 +514,7 @@ align-items: center;
   background-color: black;
   border-radius: 10px;
   overflow: hidden;
+  z-index: 3;
   
 }
 
@@ -480,6 +528,7 @@ align-items: center;
   bottom: -45px; 
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 
@@ -492,6 +541,7 @@ align-items: center;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
+  z-index: 1; 
 }
 
 .computer.code-buttons {
@@ -528,6 +578,7 @@ align-items: center;
     padding: 10px; /* Fügt einen Innenabstand für den Rahmen hinzu */
     align-items: center;
     box-sizing: border-box; /* Stellt sicher, dass das Padding nicht die Gesamtbreite erhöht */
+    margin-bottom: 20px;
   }
 
   .computer-screen {
@@ -541,7 +592,6 @@ align-items: center;
     display: none; /* Versteckt den Stand und die Base auf kleineren Geräten */
   }
 }
-
 
 
 
@@ -1312,6 +1362,8 @@ h5{
   .footer_copy{
     margin-top: 4.5rem
   }
+
+  
 
  
 }
